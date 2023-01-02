@@ -30,6 +30,7 @@ Puis on mettra en place **un routage simple, pour permettre à deux LANs de comm
 
 ➜ Quelques paquets seront souvent nécessaires dans les TPs, il peut être bon de les installer dans la VM que vous clonez :
 
+
 - de quoi avoir les commandes :
   - `dig`
   - `tcpdump`
@@ -118,7 +119,7 @@ GENERAL.HWADDR:                         **08:00:27:BE:B7:0E**
 
 🌞**Analyse de trames**
 
-🦈 [Capture réseau `tp2_arp.pcapng` qui contient un ARP request et un ARP reply](tp2_arp.pcapng)
+🦈 [Capture réseau `tp3_arp.pcapng` qui contient un ARP request et un ARP reply](tp3_arp.pcapng)
 
 - utilisez la commande `tcpdump` pour réaliser une capture de trame
 - videz vos tables ARP, sur les deux machines, puis effectuez un `ping`
@@ -204,7 +205,7 @@ PING 10.3.1.11 (10.3.1.11) 56(84) bytes of data.
 | 2     | Réponse ARP | 10.3.1.254 | Broadcast `FF:FF:FF:FF:FF` | 10.3.1.11      | `john` `08:00:27:a0:74:35` |
 
 
-🦈 [Capture réseau `tp2_routage_marcel.pcap`](tp2_routage_marcel.pcap)
+🦈 [Capture réseau `tp3_routage_marcel.pcap`](tp3_routage_marcel.pcap)
 
 ---
 
@@ -223,4 +224,4 @@ IN PROGRESS
 | 1     | ping       | `john` `10.3.1.12` | `john` `AA:BB:CC:DD:EE` | `8.8.8.8`      | ?               |     |
 | 2     | pong       | ...                | ...                     | ...            | ...             | ... |
 
-🦈 [Capture réseau `tp2_routage_internet.pcap`](tp2_routage_internet.pcap)
+🦈 [Capture réseau `tp3_routage_internet.pcap`](tp3_routage_internet.pcap)
